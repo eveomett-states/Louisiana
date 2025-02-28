@@ -6,7 +6,7 @@ This shapefile was processed by Professor Ellen Veomett and her student Arbie Hs
 
 The following obtained from [Redistricting Data Hub](https://redistrictingdatahub.org/) on June, 2024:
 
-[Population data](https://redistrictingdatahub.org/dataset/kentucky-block-pl-94171-2020-by-table/): based on the decennial census at the Census Block level on 2020 Census Redistricting Data
+[Population data](https://redistrictingdatahub.org/dataset/louisiana-block-pl-94171-2020-by-table/): based on the decennial census at the Census Block level on 2020 Census Redistricting Data
 
 [Congressional District data](https://redistrictingdatahub.org/dataset/2022-louisiana-congressional-districts-approved-plan/): 2022 Congressional Districts Approved Interim Plan
 
