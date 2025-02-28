@@ -18,7 +18,7 @@ The following obtained from [Redistricting Data Hub](https://redistrictingdatahu
 
 [2019 election data](https://redistrictingdatahub.org/dataset/vest-2019-louisiana-precinct-boundaries-and-election-results-shapefile/): VEST 2019 precinct and election results
 
-[2018 election data](https://redistrictingdatahub.org/dataset/vest-2016-georgia-precinct-and-election-results/): VEST 2018 precinct and election results
+[2018 election data](https://redistrictingdatahub.org/dataset/vest-2018-louisiana-precinct-and-election-results/): VEST 2018 precinct and election results
 
 [2016 election data](https://redistrictingdatahub.org/dataset/vest-2016-louisiana-precinct-and-election-results/): VEST 2016 precinct and election results
 
