@@ -1,6 +1,11 @@
+# License
+This data was generated using data from the Redistricting Data Hub.  Any use of this project shall also comply with restrictions on use of data and attribution requirements set forth in the Redistricting Data Hub terms and conditions found at: [https://redistrictingdatahub.org/terms-and-conditions/](https://redistrictingdatahub.org/terms-and-conditions/).
+
+Use of this project is further governed by the terms of the [Creative Commons Attribution Noncommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)
+
 # Louisiana Election Shapefile
 
-This shapefile was processed by Professor Ellen Veomett and her student Arbie Hsu.
+This shapefile was processed by Professor Ellen Veomett and her student Arbie Hsu using the corresponding jupyter notebook.  As part of the cleaning process, precincts were nested within counties and small rook adjacencies (under 30 m) were changed to queen adjacencies.
 
 # **Sources**
 
@@ -22,9 +27,11 @@ The following obtained from [Redistricting Data Hub](https://redistrictingdatahu
 
 [2016 election data](https://redistrictingdatahub.org/dataset/vest-2016-louisiana-precinct-and-election-results/): VEST 2016 precinct and election results
 
+[2020 County data](https://redistrictingdatahub.org/dataset/louisiana-county-pl-94171-2020/): from 2020 Census Redistricting Data (P.L. 94-171) Shapefiles
+
 # **Processing**
 
-Demographic data were aggregated from the census block level and precincts were assigned to districts using [MGGG's proration software](https://github.com/mggg/maup). Election data were also prorated onto VTDs from the original precinct shapefile using the `maup` package.
+Data were cleaned and aggregated in the corresponding jupyter notebook using MGGG’s python library [maup](https://github.com/mggg/maup). 
 
 # **Metadata**
 
@@ -33,7 +40,6 @@ Below is a brief description of each of the listed variables in the attribute ta
 - `STATEFP20`: State FIPS code of 2020
 - `COUNTYFP20`: County FIPS code of 2020
 - `VTDST20`: Voting tabulation district FIPS code of 2020
-- `GEOID20`: VTD FIPS code of 2020
 - `NAME20`: Voting tabulation district name of 2020
 - `CD`: Congressional district ID in 2022 enacted congressional map
 - `SEND`: State Senate district for 2022 State Senate Adopted Plan
@@ -63,34 +69,33 @@ Below is a brief description of each of the listed variables in the attribute ta
 - `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population in 2020 Census
 - `OTHERVAP`: Other race, non-hispanic, voting age population in 2020 Census
 - `2MOREVAP`: Two or more races, non-hispanic, voting age population in 2020 Census
-- `AGR19D`:  Number of votes for 2019 Democratic Commissioner of Agriculture
-- `AGR19R`:  Number of votes for 2019 Republican Commissioner of Agriculture
-- `AGR19O`:  Number of votes for 2019 other party's Commissioner of Agriculture
+- `AGR19D`:  Number of votes for 2019 Democratic Commissioner of Agriculture candidate
+- `AGR19R`:  Number of votes for 2019 Republican Commissioner of Agriculture candidate
 - `ATG19D`: Number of votes for 2019 Democratic attorney general candidate
 - `ATG19R`: Number of votes for 2019 Republican attorney general candidate
-- `ATG19O`: Number of votes for 2019 other party's attorney general candidate
-- `AUD19R`: Number of votes for 2019 Republican Auditor
-- `AUD19O`: Number of votes for 2019 other party's Auditor
-- `AUD19R`: Number of votes for 2019 Republican Auditor
 - `GOV19D`: Number of votes for 2019 Democratic gubernatorial candidate
 - `GOV19R`: Number of votes for 2019 Republican gubernatorial candidate
+- `INS19R`: Number of votes for 2019 Republican Commissioner of Insurance candidate
+- `LTG19D`: Number of votes for 2019 Democratic Lieutenant Governor candidate
+- `LTG19R`: Number of votes for 2019 Republican Lieutenant Governor candidate
 - `GOV19O`: Number of votes for 2019 other party's gubernatorial candidate
-- `PRE16D`: Number of votes for 2016 Democratic President
-- `PRE16O`: Number of votes for 2016 other party's President
-- `PRE16R`: Number of votes for 2016 Republican President
-- `PRE20D`: Number of votes for 2020 Democratic President
-- `PRE20R`: Number of votes for 2020 Republican President
-- `PRE20O`: Number of votes for 2020 other party's President
-- `SOS19D`: Number of votes for 2019 Democratic Secretary of State
-- `SOS19R`: Number of votes for 2019 Republican Secretary of State
-- `TRE19D`: Number of votes for 2019 Democratic Treasurer
-- `TRE19R`: Number of votes for 2019 other party's Treasurer
+- `PRE16D`: Number of votes for 2016 Democratic Presidential candidate
+- `PRE16O`: Number of votes for 2016 other party's Presidential candidate
+- `PRE16R`: Number of votes for 2016 Republican Presidential candidate
+- `PRE20D`: Number of votes for 2020 Democratic Presidential candidate
+- `PRE20R`: Number of votes for 2020 Republican Presidential candidate
+- `PRE20O`: Number of votes for 2020 other party's Presidential candidate
+- `SOS18D`: Number of votes for 2018 Democratic Secretary of State candidate
+- `SOS18R`: Number of votes for 2018 Republican Secretary of State candidate
+- `SOS18O`: Number of votes for 2018 other party's Secretary of State candidate
+- `SOS19D`: Number of votes for 2019 Democratic Secretary of State candidate
+- `SOS19R`: Number of votes for 2019 Republican Secretary of State candidate
+- `TRE19D`: Number of votes for 2019 Democratic Treasurer candidate
+- `TRE19R`: Number of votes for 2019 Republican Treasurer candidate
+- `TRE19O`: Number of votes for 2019 other party's Treasurer candidate
 - `USS16D`: Number of votes for 2016 Democratic senate candidate
 - `USS16R`: Number of votes for 2016 Republican senate candidate
+- `USS16O`: Number of votes for 2016 other party's senate candidate
 - `USS20D`: Number of votes for 2020 Democratic senate candidate
 - `USS20R`: Number of votes for 2020 Republican senate candidate
 - `USS20O`: Number of votes for 2020 other party's senate candidate
-
-# **Projection**
-
-The shapefile uses a UTM NAD83 projection (EPSG: 4269).
